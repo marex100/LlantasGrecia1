@@ -12,6 +12,11 @@ const ejs = require("ejs");
 //cargamos lodash
 const _ = require ("lodash");
 
+//BASE DE DATOS
+//Step 1 npm i mongoose
+//Step 2 constante
+const mongoose=require("mongoose");
+//Step 3  Bata Base connection
 
 
 
@@ -41,8 +46,8 @@ app.use(express.static("public"));
 
 //Get para el home
 app.get("/", function(req,res){
-
   console.log("You are here / ");
+  res.render("home");
 });
 
 
@@ -51,9 +56,13 @@ app.get("/", function(req,res){
 
 
 
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
 
 
 
-app.listen(3000, function() {
-  console.log("Server started on port 3000");
+app.listen(port, function() {
+  console.log("Server started succesfully");
 });
