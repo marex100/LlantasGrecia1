@@ -1,7 +1,6 @@
 {
   "name": "ejs-challenge",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,6 +11,17 @@
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
-    "lodash": "^4.17.11"
-  }
+    "lodash": "^4.17.11",
+    "mongoose": "^5.9.27"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marex100/LlantasGrecia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marex100/LlantasGrecia/issues"
+  },
+  "homepage": "https://github.com/marex100/LlantasGrecia#readme",
+  "description": ""
 }
